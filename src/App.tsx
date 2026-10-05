@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Devstacks from './components/Devstacks'
 import type { devstacktype } from './Types/DevStacktype'
+import Footer from './components/Footer'
 
 const devstackpromise = async(): Promise<devstacktype[]> => {
   const res = await fetch('/data.json')
@@ -21,6 +22,7 @@ function App() {
       <Suspense fallback={<p>Loading...</p>}>
         <Devstacks devstackpromise = {devstackpromise()}></Devstacks>
       </Suspense>
+      <Footer />
     </>
   )
 }
