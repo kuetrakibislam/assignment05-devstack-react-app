@@ -72,7 +72,7 @@ export default function Navbar() {
             </div>
 
             {/* ================= DESKTOP LOGO ================= */}
-            <div className="navbar-start hidden lg:flex">
+            <div className="navbar-start hidden mx-auto max-w-6xl px-4 lg:flex">
 
                 <a 
                     href="#home"
@@ -153,7 +153,7 @@ export default function Navbar() {
 
 
             {/* ================= RIGHT BUTTONS ================= */}
-            <div className="navbar-end gap-1 sm:gap-2">
+            <div className="navbar-end gap-1 mx-auto max-w-6xl px-4 sm:gap-2">
 
                 {/* Sign In */}
                 <button
